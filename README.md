@@ -4,8 +4,8 @@ This repository contains data and processing scripts in support of the preprint:
 Lee, H. J., Lee, H., Lim, C. Y., Rhim, I., & Lee, S. H. (2023). What humans learn from corrective feedback for perceptual decision-making. bioRxiv.
 https://www.biorxiv.org/content/10.1101/2023.01.11.523567
 
-The paper is currently under revision at PLoS Biology. 
-File names and script description in this repository to indicate figures and tables according to its latest version during the peer-review process. 
+The paper is currently under revision at PLoS Biology:
+File names and descriptions in this repository are supposed to refer to figures and tables according to its latest version undergoing the peer-review process. 
 
 ## Authors
 Hyang-Jung Lee, Heeseung Lee, Chae Young Lim, Issac Rhim, and Sang-Hun Lee
@@ -30,7 +30,7 @@ The [other_datasets](data/other_datasets/) folder contains not only the source d
 
     Hachen, I., Reinartz, S., Brasselet, R., Stroligo, A., & Diamond, M. E. (2021). Dynamics of history-dependent perceptual judgment. Nature communications, 12(1), 6036 ([link](https://www.nature.com/articles/s41467-021-26104-2))
 
-For more information about the structure of the processed data, see [plot_S7Fig.m](plot_S7Fig.m):
+For more information about the structure of the processed data, see plot_S7Fig.m in the [reproducePaper](reproducePaper/) folder:
 
 
 
@@ -54,7 +54,7 @@ Each script is executable within the [reproducePaper](reproducePaper/) folder se
 The [model](model/) folder contains subfolders as follows:
 
 - [main](model/main/): contains scripts to perform model fitting, model simulation, and model recovery. 
-To fit the models, go to the [main] folder, run [runme_fit.m](runme_fit.m). To perform model recovery procedure, run [runme_mdrc.m](runme_mdrc.m), which requires model simulations. Model simulator functions (simulator_MODEL.m) can also be found. 
+To fit the models, go to the [main] folder, run [runme_fit.m](model/main/runme_fit.m). To perform model recovery procedure, run [runme_mdrc.m](model/main/runme_mdrc.m), which requires model simulations. Model simulator functions (simulator_MODEL.m) can also be found. 
 
 - [func](model/func/): contains scripts needed to train models. The core part of the BMBU model proposed in the paper include fitting_BMBU.m and get_BoundLkld.m.
 
