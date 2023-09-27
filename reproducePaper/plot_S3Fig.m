@@ -18,7 +18,7 @@ name_fold = [path_home, '/results_model_rc'];
 imod = 1; 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([name_fold, '/bads-fitResults_randstrt30/mainData_numBMBU/FitBMBU/FitBMBU_toSimBMBU', num2str(iSub),'.mat']) 
+    load([name_fold, '/mainData_numBMBU/FitBMBU/FitBMBU_toSimBMBU', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -29,7 +29,7 @@ imod = 2;
 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numBMBU/FitRLVU/FitRLVU_toSimBMBU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numBMBU/FitRLVU/FitRLVU_toSimBMBU', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
@@ -43,7 +43,7 @@ imod = 3;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numBMBU/FitHYBR/FitHYBR_toSimBMBU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numBMBU/FitHYBR/FitHYBR_toSimBMBU', num2str(iSub),'.mat']) 
    
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -58,7 +58,7 @@ imod = 4;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numBMBU/FitZFIX/FitZFIX_toSimBMBU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numBMBU/FitZFIX/FitZFIX_toSimBMBU', num2str(iSub),'.mat']) 
 
     % eliminate stored extra param.
     fitResults.fitted_params{1} =  fitResults.fitted_params{1}(1); 
@@ -94,7 +94,7 @@ frow_1  = [length(find(pA(:,1) == 1))/size(pop,1), length(find(pA(:,1) == 2))/si
 imod = 1; 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numRLVU/FitBMBU/FitBMBU_toSimRLVU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numRLVU/FitBMBU/FitBMBU_toSimRLVU', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
@@ -105,7 +105,7 @@ imod = 2;
 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numRLVU/FitRLVU/FitRLVU_toSimRLVU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numRLVU/FitRLVU/FitRLVU_toSimRLVU', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -118,7 +118,7 @@ imod = 3;
 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numRLVU/FitHYBR/FitHYBR_toSimRLVU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numRLVU/FitHYBR/FitHYBR_toSimRLVU', num2str(iSub),'.mat']) 
    
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;   
@@ -135,7 +135,7 @@ imod = 4;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numRLVU/FitZFIX/FitZFIX_toSimRLVU', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numRLVU/FitZFIX/FitZFIX_toSimRLVU', num2str(iSub),'.mat']) 
 
     % eliminate stored extra param.
     fitResults.fitted_params{1} =  fitResults.fitted_params{1}(1); 
@@ -174,7 +174,7 @@ frow_2  = [length(find(pA(:,1) == 1))/size(pop,1), length(find(pA(:,1) == 2))/si
 imod = 1; 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numHYBR/FitBMBU/FitBMBU_toSimHYBR', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numHYBR/FitBMBU/FitBMBU_toSimHYBR', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
@@ -185,7 +185,7 @@ imod = 2;
 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numHYBR/FitRLVU/FitRLVU_toSimHYBR', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numHYBR/FitRLVU/FitRLVU_toSimHYBR', num2str(iSub),'.mat']) 
   
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
@@ -198,7 +198,7 @@ imod = 3;
 
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numHYBR/FitHYBR/FitHYBR_toSimHYBR', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numHYBR/FitHYBR/FitHYBR_toSimHYBR', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -214,7 +214,7 @@ imod = 4;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numHYBR/FitZFIX/FitZFIX_toSimHYBR', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numHYBR/FitZFIX/FitZFIX_toSimHYBR', num2str(iSub),'.mat']) 
 
      % eliminate stored extra param.
     fitResults.fitted_params{1} =  fitResults.fitted_params{1}(1); 
@@ -253,7 +253,7 @@ imod = 1;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numZFIX/FitBMBU/FitBMBU_toSimZFIX', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numZFIX/FitBMBU/FitBMBU_toSimZFIX', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
@@ -268,7 +268,7 @@ imod = 2;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numZFIX/FitRLVU/FitRLVU_toSimZFIX', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numZFIX/FitRLVU/FitRLVU_toSimZFIX', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -282,7 +282,7 @@ imod = 3;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([ name_fold, '/bads-fitResults_randstrt30/mainData_numZFIX/FitHYBR/FitHYBR_toSimZFIX', num2str(iSub),'.mat']) 
+    load([ name_fold, '/mainData_numZFIX/FitHYBR/FitHYBR_toSimZFIX', num2str(iSub),'.mat']) 
 
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
     raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;     
@@ -304,7 +304,7 @@ imod = 4;
 for iSub = 1 : nSub
     nan_dataP = 0; num_dataP = all_dataP - nan_dataP;
 
-    load([name_fold, '/bads-fitResults_randstrt30/mainData_numZFIX/FitZFIX/FitZFIX_toSimZFIX', num2str(iSub),'.mat']) 
+    load([name_fold, '/mainData_numZFIX/FitZFIX/FitZFIX_toSimZFIX', num2str(iSub),'.mat']) 
 
     % eliminate stored extra param.
     fitResults.fitted_params{1} =  fitResults.fitted_params{1}(1); 

@@ -4,8 +4,8 @@ This repository contains data and processing scripts in support of the preprint:
 Lee, H. J., Lee, H., Lim, C. Y., Rhim, I., & Lee, S. H. (2023). What humans learn from corrective feedback for perceptual decision-making. bioRxiv.
 https://www.biorxiv.org/content/10.1101/2023.01.11.523567
 
-The paper is currently under revision at PLoS Biology. New link and the doi information will be provided upon publication. 
-File names and script description in this repository to indicate figures and tables in the manuscript; they all follow its latest version during the revision process. 
+The paper is currently under revision at PLoS Biology. 
+File names and script description in this repository to indicate figures and tables according to its latest version during the peer-review process. 
 
 ## Authors
 Hyang-Jung Lee, Heeseung Lee, Chae Young Lim, Issac Rhim, and Sang-Hun Lee

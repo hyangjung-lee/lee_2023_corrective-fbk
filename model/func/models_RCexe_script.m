@@ -5,7 +5,7 @@ addpath(genpath([path_dir, '/model/bads-master']));
 
 str_models ={'BMBU','RLVU', 'HYBR', 'CFIX', 'ZFIX'}; % ZFIX: model "Base"
 mod_str = str_models{imod}; 
-bads_folder_path = strcat([path_dir, '/model/out_rc','/bads-fitResults_randstrt30/', 'mainData_num'], mod_str ) ;
+bads_folder_path = strcat([path_dir, '/model/out_rc/', 'mainData_num'], mod_str ) ;
 
 
 
@@ -47,7 +47,7 @@ expInfo.numTrials = numTrials;
 
 
 dataset = matT; 
-main_recovery_omitsubj(dataset, imod, mod_str, expInfo, bads_folder_path, mode_lapse) 
+main_recovperformer(dataset, imod, mod_str, expInfo, bads_folder_path, mode_lapse) 
 % % delete(gcp('nocreate'))
 
 

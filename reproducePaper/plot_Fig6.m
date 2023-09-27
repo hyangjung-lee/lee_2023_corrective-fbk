@@ -23,7 +23,6 @@ imod = 1; str_model{imod}
 fit_p = cell(size(str_model));
 for iSub = 1:nSub
     nan_dataP = length(find(subjCmat{iSub, 1}(:) == 0))+ length(find(subjCmat{iSub, 2}(:) == 0)) + length(find(subjCmat{iSub, 3}(:) == 0)); num_dataP = all_dataP - nan_dataP;
-                    % load(['/Users/eva/Desktop/results_445/verS445/FF/bads-fitResults_randstrt30/mainData_numFFwoC/numerical_interimFFwoC', num2str(iSub), '.mat'])
     load([path_str.results, '/', name_model{imod}, '/fit_', name_model{imod} ,'_subj', num2str(iSub), '.mat'], 'fitResults');
     [gof.llkd, gof.aicc, gof.bic, gof.prmbest] = load_gof_models(fitResults, num_dataP); 
         raw_pop(iSub, imod) = gof.llkd;                 pop(iSub, imod)     = gof.aicc;    
