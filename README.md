@@ -6,7 +6,6 @@ https://www.biorxiv.org/content/10.1101/2023.01.11.523567
 
 The paper is currently under revision at PLoS Biology. New link and the doi information will be provided upon publication. 
 File names and script description in this repository to indicate figures and tables in the manuscript; they all follow its latest version during the revision process. 
-Data and scripts are available at https://osf.io/z57vx/ under a CC-BY 4.0 license.
 
 ## Authors
 Hyang-Jung Lee, Heeseung Lee, Chae Young Lim, Issac Rhim, and Sang-Hun Lee
@@ -57,7 +56,7 @@ The [model](model/) folder contains subfolders as follows:
 - [main](model/main/): contains scripts to perform model fitting, model simulation, and model recovery. 
 To fit the models, go to the [main] folder, run [runme_fit.m](runme_fit.m). To perform model recovery procedure, run [runme_mdrc.m](runme_mdrc.m), which requires model simulations. Model simulator functions (simulator_MODEL.m) can also be found. 
 
-- [func](model/func/): contains scripts needed to train models. The core part of the BMBU model proposed in the paper include [fitting_BMBU.m](model/main/func/fitting_BMBU.m) and [get_BoundLkld.m](model/main/func/get_BoundLkld.m).
+- [func](model/func/): contains scripts needed to train models. The core part of the BMBU model proposed in the paper include fitting_BMBU.m and get_BoundLkld.m.
 
 - [lib_ver101](model/lib_ver101/): contains functions required to run scripts in the [model](model/) folder 
 - bads-master:  [Bayesian Adaptive Direct Search (BADS)](https://github.com/acerbilab/bads) toolbox
