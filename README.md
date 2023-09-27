@@ -5,11 +5,8 @@ Lee, H. J., Lee, H., Lim, C. Y., Rhim, I., & Lee, S. H. (2023). What humans lear
 https://www.biorxiv.org/content/10.1101/2023.01.11.523567
 
 The paper is currently under revision at PLoS Biology:
+
 File names and descriptions in this repository are supposed to refer to figures and tables according to its latest version undergoing the peer-review process. 
-
-## Authors
-Hyang-Jung Lee, Heeseung Lee, Chae Young Lim, Issac Rhim, and Sang-Hun Lee
-
 
 ## `data`
 
