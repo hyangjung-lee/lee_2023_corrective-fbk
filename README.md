@@ -42,9 +42,9 @@ The [si_data_plosb](data/si_data_plosb/) folder contains excel spreadsheet files
 
 ## `reproducePaper`
 
-To reproduce all figure items that appear in the main text and in Supporting Information, go to the [plot](plot/) folder and run .m files, which also reproduce statistical results reported in the main text as well as in the tables in Supporting Information. 
+To reproduce all figure items that appear in the main text and in Supporting Information, go to the [reproducePaper](reproducePaper/) folder and run .m files, which also reproduce statistical results reported in the main text as well as in the tables in Supporting Information. 
 
-Each script is executable within the [plot](plot/) folder set as the working directory. 
+Each script is executable within the [reproducePaper](reproducePaper/) folder set as the working directory. 
 - plot_Fig#.m - a script to generate one or more figure or table item(s) named after what was referred to in the paper.  
 
 <br/>
